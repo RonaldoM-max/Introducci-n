@@ -1,27 +1,3 @@
-<header class="navbar">
-    <div class="LOGO"> 
-       <h2><a href="" target="_blanck">MY instagram</a></h2>
-    </div>
-      <nav>
-          <ul>
-              <li class="Home"><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#" class="Serveices">Serveices</a></li>
-              <li><a href="#">Products</a></li>
-              <li><a href="#">Contact</a></li>
-          </ul>
-      </nav>
-      <div class="divTotal">  
-          <input type="checkbox" id="check">
-          <label for="check" class="checkbtn">
-              <i class="fas"></i>  
-          </label>
-      </div>
-  </header>
-  <div class="contenu">
-      <article>
-          <p>Are You Ready To Learn Programing!</p>
-          <input type="button" value="Explore More"/>
-          <input type="button" value="Watch Videos"/>
-      </article>
-  </div>
+{% extends 'base.html' %}
+
+{% block content %}hola, visita mi <a href="{% url 'blog:home' %}" class="text-blue-500">blog aqu{% endblock content %}hola, visita mi <a href="{% url 'blog:home' %}">blog aqu
